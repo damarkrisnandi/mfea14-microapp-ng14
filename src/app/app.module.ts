@@ -20,12 +20,15 @@ import {ProgressBarModule} from 'primeng/progressbar';
 import {DropdownModule} from 'primeng/dropdown';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { EmptyRouteComponent } from './empty-route/empty-route.component';
+import { APP_BASE_HREF } from '@angular/common';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CustomerDataComponent
+    CustomerDataComponent,
+    EmptyRouteComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [{provide: APP_BASE_HREF, useValue: '/'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
