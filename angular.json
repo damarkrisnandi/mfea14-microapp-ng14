@@ -35,7 +35,7 @@
               "libraryName": "simple-ng14",
               "libraryTarget": "umd"
             },
-            "deployUrl": "http://localhost:4205/"
+            "deployUrl": "https://mfea14-microapp-ng14.vercel.app/"
           },
           "configurations": {
             "production": {
